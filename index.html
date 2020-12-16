@@ -1,0 +1,176 @@
+---
+title: Home
+---
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Mylen</title>
+    <meta name="description" content="Blankety Blank">
+    <meta name="author" content="Brett Collins">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/site.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href='#bio'>BIO</a>
+            <a href='#dates'>DATES</a>
+            <img src='./images/logo.svg'>
+            <a href='#listen'>LISTEN</a>
+            <a href='#contact'>CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id='hero'>
+            <img src='./images/logo.svg' />
+            <div id='slideshow'>
+                <div id='slide-1' class='slide current-slide'></div>
+                <div id='slide-2' class='slide'></div>
+            </div>
+        </section>
+
+        <div class='right-cut'>
+            <section id='bio' class='center'>
+                <h1>BIO</h1>
+                <div class='content'>
+                    <p class='hide'>{{ site.data.paragraphs.bio }}</p>
+                    <div class='image-dials'>
+                        <div class='image hide'>
+                        </div>
+                        <!-- <div class='dials'>
+                            <div class='dial-container'>
+                                <p>Low</p>
+                                <img id='low' class='dial' src='./images/dial.svg' draggable='false'>
+                            </div>
+                            <div class='dial-container'>
+                                <p>Mid</p>
+                                <img id='mid' class='dial' src='./images/dial.svg' draggable='false'>
+                            </div>
+                            <div class='dial-container'>
+                                <p>High</p>
+                                <img id='high' class='dial' src='./images/dial.svg' draggable='false'>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id='cues'>
+        </div>
+
+        <section id='dates' class='center section-margin'>
+            <h1>UPCOMING DATES</h1>
+            <div class='content'>
+                <div class='image hide'>
+                    <div id='logo-animation'>
+                        <div class='animation-row'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                        <div class='animation-row animation-row-reverse'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                        <div class='animation-row'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                        <div class='animation-row animation-row-reverse'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                        <div class='animation-row'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                        <div class='animation-row animation-row-reverse'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                        <div class='animation-row'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                        <div class='animation-row animation-row-reverse'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                            <img src='images/outline.svg'>
+                        </div>
+                    </div>
+                </div>
+                <div class='listbox'>
+                    <ul class='hide'>
+                        {% for date in site.data.dates.dates %}
+                        <li><img src='images/event.svg' /><a href='{{ date.event }}'>{{ date.name }}</a></li>
+                        {% endfor %}
+                        <li><a class='facebook' target='_blank' href='https://www.facebook.com/pg/MYLEN.NZ/events'>View all on Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class='right-cut'>
+            <section id='listen' class='center section-margin'>
+                <h1>LISTEN</h1>
+                <div class='content hide'>
+                    <ul>
+                        {% for mix in site.data.mixes.mixes %}
+                        <li>
+                            <div></div>
+                        </li>
+                        {% endfor %}
+                        <li class='soundcloud'>More on SoundCloud</li>
+                    </ul>
+                    <div class='mix-info hide'>
+                        <p>{{ site.data.paragraphs.listen }}</p>
+                        <a href='https://soundcloud.com/mylen_nz/'>Listen on SoundCloud</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id='contact' class='center section-margin'>
+            <h1>CONTACT</h1>
+            <div class='content'>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
