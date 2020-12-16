@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Knob</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-852.000000, -1439.000000)" stroke="#444444">
+            <g id="Knob" transform="translate(852.000000, 1439.000000)">
+                <circle id="Oval" cx="25" cy="25" r="24.5"></circle>
+                <line x1="25" y1="25" x2="8.5" y2="41.5" id="Line-5" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>
