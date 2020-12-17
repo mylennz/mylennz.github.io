@@ -1,7 +1,7 @@
 ---
 ---
 
-animation = false 
+animation = true 
 
 var mixes = {{ site.data.listen | jsonify }};
 

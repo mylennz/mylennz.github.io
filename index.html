@@ -55,6 +55,10 @@ title: Home
                 <h1>BIO</h1>
                 <div class='content'>
                     <p class='hide'>{{ site.data.paragraphs.bio }}</p>
+                    <div class='image-dials'>
+                        <div class='image hide'>
+                    </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -142,11 +146,11 @@ title: Home
 
         <section id='contact' class='center section-margin'>
             <h1>CONTACT</h1>
-            <div class='content'>
+            <div class='content hide'>
                 <!-- <div class='image hide'>
                 </div> -->
                 <div class='listbox'>
-                    <ul class='hide'>
+                    <ul>
                         {% for contact in site.data.contacts %}
                         <li>
                             <h3>{{ contact.name }}</h3><p>{{ contact.contact }}</p>
