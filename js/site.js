@@ -3,7 +3,7 @@
 
 animation = false 
 
-var mixes = {{ site.data.mixes.mixes | jsonify }};
+var mixes = {{ site.data.listen | jsonify }};
 
 $(() => {
 

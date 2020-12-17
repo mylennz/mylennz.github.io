@@ -143,9 +143,9 @@ title: Home
                 <h1>LISTEN</h1>
                 <div class='content hide'>
                     <ul>
-                        {% for mix in site.data.mixes.mixes %}
+                        {% for listen in site.data.listen %}
                         <li>
-                            <div></div>
+                            <div style='background-image: url("{{ listen.artwork }}")'></div>
                         </li>
                         {% endfor %}
                         <li class='soundcloud'>More on SoundCloud</li>
